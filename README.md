@@ -9,7 +9,7 @@ apt upgrade
 ## Firewall
 ```bash
 sudo apt install firewalld
-sudo firewall-cmd --zone=public --permanent --add-port=8888/tcp
+sudo firewall-cmd --zone=public --permanent --add-port=8000/tcp
 sudo firewall-cmd --reload
 sudo firewall-cmd --info-zone=public
 ```
