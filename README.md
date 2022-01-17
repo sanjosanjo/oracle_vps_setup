@@ -14,5 +14,6 @@ sudo firewall-cmd --zone=public --permanent --add-port=8888/tcp
 sudo firewall-cmd --reload
 ```
 https://stackoverflow.com/questions/65005814/opening-a-specific-port-in-oracle-cloud-ubuntu-18
+
 https://oracle-base.com/articles/vm/oracle-cloud-infrastructure-oci-amend-firewall-rules
 
