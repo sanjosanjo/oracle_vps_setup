@@ -1,2 +1,2 @@
-# oracle_vps_setup
+# Oracle VPS setup
 Setting up a VPS on Oracle Free Tier
