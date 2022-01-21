@@ -10,7 +10,6 @@ apt upgrade
 ```bash
 
 IPtables (recommended instead of firewalls)
-
 sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 80 -j ACCEPT
 
 sudo apt install firewalld
