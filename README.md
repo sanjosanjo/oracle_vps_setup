@@ -11,7 +11,9 @@ apt upgrade
 
 IPtables (recommended instead of firewalls)
 sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 80 -j ACCEPT
-
+```
+https://www.tecmint.com/linux-iptables-firewall-rules-examples-commands/
+```
 sudo apt install firewalld
 sudo firewall-cmd --zone=public --permanent --add-port=8000/tcp
 sudo firewall-cmd --reload
