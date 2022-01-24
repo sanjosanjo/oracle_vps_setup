@@ -11,6 +11,10 @@ apt upgrade
 
 IPtables (recommended instead of firewalls)
 sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 80 -j ACCEPT
+iptables -F
+iptables-save > ~/iptables.rules
+iptables-restore < ~/iptables.rules
+
 ```
 https://www.tecmint.com/linux-iptables-firewall-rules-examples-commands/
 ```bash
