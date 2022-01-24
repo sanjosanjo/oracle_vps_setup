@@ -6,14 +6,14 @@ apt update
 apt upgrade
 ```
 
-## Firewall
+## Firewall on server
 ```bash
 
 IPtables (recommended instead of firewalls)
 sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 80 -j ACCEPT
 ```
 https://www.tecmint.com/linux-iptables-firewall-rules-examples-commands/
-```
+```bash
 sudo apt install firewalld
 sudo firewall-cmd --zone=public --permanent --add-port=8000/tcp
 sudo firewall-cmd --reload
@@ -23,6 +23,10 @@ https://stackoverflow.com/questions/65005814/opening-a-specific-port-in-oracle-c
 
 https://oracle-base.com/articles/vm/oracle-cloud-infrastructure-oci-amend-firewall-rules
 
+## Firewall on Oracle website
+```bash
+need to add Ingress rules for your ports
+```
 ## Sabnzbd
 ```bash
 -- Accessing the web-interface
